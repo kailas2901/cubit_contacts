@@ -21,8 +21,8 @@ class RecordsCubit extends Cubit<RecordsState> {
       emit(RecordsError());
       return;
     }else{
-      List<Records> records = data.map((item) => Records.fromjson(item)).toList();
-      emit(RecordsSucess(records));
+      List<Records> records1 = data.map((item) => Records.fromjson(item)).toList();
+      emit(RecordsSucess(records : records1));
     }
 
   }

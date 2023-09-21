@@ -19,11 +19,11 @@ class RecordsLoading extends RecordsState {
 class RecordsSucess extends RecordsState {
   final List<Records> records;
 
-  RecordsSucess(this.records);
+  RecordsSucess({required this.records});
 
   @override
   List<Object> get props => [records];
-  
+
 }
 
 class RecordsError extends RecordsState {
